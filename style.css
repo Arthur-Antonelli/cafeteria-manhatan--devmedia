@@ -1,0 +1,253 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container-parallax1, 
+.container-parallax2, 
+.container-parallax3, 
+.container-parallax4, 
+.container-parallax5 {
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.topo {
+    width: 100%;
+    position: fixed;
+    background-color: #604829;
+    z-index: 1; /*Faz o elemento ficar sempre na frente dos outros, ou seja, mexe com o eixo Z*/
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.topo img {
+    width: 100px;
+}
+
+.topo div a {
+    margin-right: 20px;
+    font-size: 18px;
+    font-family: "Oswald", sans-serif;
+    font-weight: 700;
+    text-decoration: none;
+    text-shadow: 3px 5px 2px #000000; 
+    color: #c4a47c;
+    letter-spacing: 2px;
+}
+
+.container-parallax1 {
+    background-image: url('assets/parallax-imagem1.png');
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 30px;
+}
+
+.container-parallax1 h1 {
+    color: #fff;
+    font-weight: 400;
+    font-family: "Fraunces", serif;
+    font-size: clamp(35px, 5vw, 100px);
+    text-align: center;
+}
+
+.container-parallax2 {
+    background-image: url('assets/parallax-imagem2.jpg');
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 30px;
+}
+
+.container-parallax3 {
+    background-image: url('assets/parallax-imagem3.jpg');
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 30px;
+}
+
+.container-parallax2 h3,
+.container-parallax3 h3 {
+    width: 500px;
+    padding: 10px;
+    
+    font-size: 24px;
+    font-weight: 400;
+    font-style: italic;
+    font-family: "Fraunces", sans-serif;
+    text-align: center;
+
+    letter-spacing: 2px;
+    background-color: #604829;
+    color: #fff;
+}
+
+.container-parallax4 {
+    background-image: url('assets/parallax-imagem4.png');
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 30px;
+}
+
+.container-parallax4 h2 {
+    width: 500px;
+    padding: 10px;
+    font-size: 24px;
+    font-family: "Oswald", serif;
+    letter-spacing: 5px;
+    text-align: center;
+    color: #fff;
+    background-color: #604829;
+}
+
+.container-parallax4 iframe {
+    width: clamp(400px, 80%, 1024px);
+}
+
+.container-contatos {
+    width: 500px;
+    padding: 10px;
+    background-color: #604829;
+}
+
+.container-contatos p {
+    color: #fff;
+    font-family: "Oswald", sans-serif;
+    line-height: 36px;
+    text-shadow: 0px 6px 8px #000000;
+    text-align: center;
+}
+
+.container-texto {
+    padding: 80px 0px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 34px;
+    letter-spacing: 1px;
+    text-align: center;
+    color: #666;
+}
+
+.container-texto h2 {
+    margin-bottom: 30px;
+    font-size: 24px;
+    letter-spacing: 2px;
+    font-family: "Oswald", sans-serif;
+    color: #c4a47c;
+}
+
+.container-texto p {
+    max-width: 1024px;
+    padding: 0px 20px;
+    margin: 0 auto;
+    font-family: "Lato", "sans-serif";
+    line-height: 34px;
+    letter-spacing: 1px;
+    color: #666;
+}
+
+.container-parallax5 {
+    height: 85vh;
+    background-image: url('assets/cafeteria.jpg');
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 30px;
+}
+
+.container-parallax5 h2 {
+    font-family: "Oswald", sans-serif;
+    text-align: center;
+    letter-spacing: 8px;
+    color: white;
+}
+
+.lista-horarios { /* tag <ul> */
+    width:100%;
+    max-width: 768px;
+    height: 60%;
+    font-family: "Oswald", sans-serif;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.lista-horarios li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.lista-horarios li h3 { /* subtitulo = <h3> */
+    color: #fff;
+    flex: 0 1 80px;
+}
+
+.lista-horarios li div {
+    height: 1px;
+    background-color: #ACACAC;
+    flex: 1 1 auto;
+}
+
+.lista-horarios li p,
+.texto-marrom { /* paragrafo + span*/
+    font-weight: 700;
+    font-family: "Oswald", sans-serif;
+    flex: 0 1 100px;
+    text-align: right;
+}
+
+.texto-marrom {
+    color: #c4a47c;
+}
+
+.lista-horarios li p {
+    color: #ACACAC;
+}
+
+/* Rodapé */
+.container-rodape {
+    position: relative;
+    padding: 20px 0;
+    line-height: 34px;
+    letter-spacing: 2px;
+    font-weight: 600;
+    font-family: "Lato", sans-serif;
+    text-align: center;
+    background-color: #000000;
+    color: #fff;
+}
+
+.container-rodape span {
+    color: #c4a47c;
+}
+
+.container-rodape a {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: -35px;
+    right: 50px;
+
+    background-image: url('assets/seta-para-cima.png');
+    background-position: center;
+    background-size: cover;
+    background-color: #c4a47c;
+    border-radius: 4px;
+}
